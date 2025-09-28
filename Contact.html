@@ -4,95 +4,134 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Contact</title>
+    <link rel="stylesheet" href="../WEDE ST10462947 POE1/Style.css">
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
 </head>
 <body>
-     <!-- Nav Bar -->
-    <nav class="navbar">
-        <table border="1" align="center" cellpadding="15" cellspacing="5">
-    <tr>
-        <td> <a href="Index.html">Homepage</a></td>
-        <td>  <a href="About.html">About</a></td>
-           <td> <a href="Products.html">Products</a></td>
-           <td>  <a href="Enquiry.html">Enquiry</a></td>
-        <td><a href="#">Contact</a></td>    
-        
-           
-    </tr>
+     <!-- Animated Background -->
+  <div id="bg-animation"></div>
+
+  <!-- Page Content -->
+  <div id="page-content">
+
+    <!-- Navbar with Hamburger -->
+<nav class="navbar">
+  <div class="nav-container">
+    <a href="#" class="nav-logo"> Hanover Bakery</a>
+    
+
+    <!-- Hamburger using checkbox -->
+<input type="checkbox" id="nav-toggle" class="nav-toggle-checkbox">
+<label for="nav-toggle" class="nav-toggle">
+  <span class="bar"></span>
+  <span class="bar"></span>
+  <span class="bar"></span>
+</label>
+
+
+    <!-- Nav Buttons -->
+    <ul class="nav-menu">
+      <li><a href="Index.html" class="nav-links">Homepage</a></li>
+      <li><a href="About.html" class="nav-links">About</a></li>
+      <li><a href="products.html" class="nav-links">Products</a></li>
+      <li><a href="Enquiry.html" class="nav-links">Enquiry</a></li>
+      <li><a href="#" class="nav-links">Contacts</a></li>
+    </ul>
+  </div>
+</nav>
+</br>
+    <!-- Header -->
+    <header class="header">
+      <img src="../WEDE ST10462947 POE1/h1.jpg" alt="Bakery Logo Left">
+      <h1>Hanover Bakery</h1>
+      <img src="../WEDE ST10462947 POE1/h1.jpg" alt="Bakery Logo Right">
+    </header>
+
+ 
+    <hr>
   </table>
 
 
-          <table align="center">
-  <tr>
-    <td><img src="../WEDE ST10462947 POE1/h1.jpg" alt="Left Image" width="100"></td>
-    <td align="center"><h1>Hanover Bakery</h1></td>
-    <td><img src="../WEDE ST10462947 POE1/h1.jpg" alt="Right Image" width="100"></td>
-  </tr>
-</table>
-<h2 align="center">📞 Contact</h2>
-<p align="center">We'd love to hear from you! Fill out the form or check our locations on the map.</p>
-<hr>
+ 
+  <section class="contact-section">
+    <h2><i class="fas fa-phone-alt"></i> Contact</h2>
+    <p>We’d love to hear from you! Fill out the form or check our locations on the map.</p>
+    <hr>
 
-<!-- Two-column layout using table -->
-<table align="center" cellpadding="20">
-  <tr>
-    <!-- Left Side: Contact Form -->
-    <td valign="top">
-      <form action="#" method="post">
+    <div class="contact-container">
+      <!-- Contact Form -->
+      <div class="contact-form">
+        <form action="#" method="post">
+          <label for="name">Name:</label>
+          <div class="input-box">
+            <i class="fa fa-user"></i>
+            <input type="text" id="name" name="name" placeholder="Your full name" required>
+          </div>
 
-        <!-- Name -->
-        <label for="name"><b>Name:</b></label><br>
-        <input type="text" id="name" name="name" placeholder="Your full name" required><br><br>
+          <label for="email">Email:</label>
+          <div class="input-box">
+            <i class="fa fa-envelope"></i>
+            <input type="email" id="email" name="email" placeholder="example@email.com" required>
+          </div>
 
-        <!-- Email -->
-        <label for="email"><b>Email:</b></label><br>
-        <input type="email" id="email" name="email" placeholder="example@email.com" required><br><br>
+          <label for="contact">Contact Number:</label>
+          <div class="input-box">
+            <i class="fa fa-phone"></i>
+            <input type="tel" id="contact" name="contact" placeholder="+27 82 123 4567">
+          </div>
 
-        <!-- Contact Number -->
-        <label for="contact"><b>Contact Number:</b></label><br>
-        <input type="tel" id="contact" name="contact" placeholder="+27 82 123 4567"><br><br>
+          <label for="subject">Subject:</label>
+          <div class="input-box">
+            <i class="fa fa-tag"></i>
+            <input type="text" id="subject" name="subject" placeholder="Reason for contacting" required>
+          </div>
 
-        <!-- Subject -->
-        <label for="subject"><b>Subject:</b></label><br>
-        <input type="text" id="subject" name="subject" placeholder="Reason for contacting" required><br><br>
+          <label for="message">Message:</label>
+          <div class="input-box textarea-box">
+            <i class="fa fa-comment-dots"></i>
+            <textarea id="message" name="message" rows="6" placeholder="Write your message here..." required></textarea>
+          </div>
 
-        <!-- Message -->
-        <label for="message"><b>Message:</b></label><br>
-        <textarea id="message" name="message" rows="8" cols="40" placeholder="Write your message here..." required></textarea><br><br>
+          <button type="submit"><i class="fa fa-paper-plane"></i> Send Message</button>
+        </form>
+      </div>
 
-        <!-- Submit Button -->
-        <input type="submit" value="Send Message">
+      <!-- Maps -->
+      <div class="contact-maps">
+        <h3>Our Locations</h3>
 
-      </form>
-    </td>
+        <div class="map-box">
+          <p><b>Mayfair Street Bakery</b></p>
+          <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3579.633534717345!2d28.01424267524661!3d-26.208596877073898!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1e950954946e1515%3A0xf3760892f1926aae!2sHanover%20Street%20Bakery!5e0!3m2!1sen!2sus!4v1756237137182!5m2!1sen!2sus"
+            width="100%" height="200" style="border:0;" allowfullscreen loading="lazy"></iframe>
+        </div>
 
-    <!-- Right Column: Maps -->
-    <td valign="top">
-      <h3>Our Locations</h3>
-      
-      <!-- Map 1 -->
-      <p><b>Mayfair Street Bakery</b></p>
-     <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3579.633534717345!2d28.01424267524661!3d-26.208596877073898!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1e950954946e1515%3A0xf3760892f1926aae!2sHanover%20Street%20Bakery!5e0!3m2!1sen!2sus!4v1756237137182!5m2!1sen!2sus" 
-     width="350" height="200" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-      <br><br>
-
-      <!-- Map 2 -->
-      <p><b>Crosby Avenue Bakery</b></p>
-      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3580.0045588437406!2d27.99242507524607!3d-26.19652997708137!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1e950bc29c90153f%3A0xeafb31cbaa6bf18!2sShoneez%20Confectioners!5e0!3m2!1sen!2sus!4v1756237282977!5m2!1sen!2sus" 
-      width="350" height="200" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-    </td>
-  </tr>
-</table>
-
-<hr>
+        <div class="map-box">
+          <p><b>Crosby Avenue Bakery</b></p>
+          <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3580.0045588437406!2d27.99242507524607!3d-26.19652997708137!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1e950bc29c90153f%3A0xeafb31cbaa6bf18!2sShoneez%20Confectioners!5e0!3m2!1sen!2sus!4v1756237282977!5m2!1sen!2sus"
+            width="100%" height="200" style="border:0;" allowfullscreen loading="lazy"></iframe>
+        </div>
+      </div>
+    </div>
+  </section>
 
 
-<!-- Contact Info -->
-<div align="center">
-  <p>📍 Address: Crosby Street, Johannesburg, South Africa</p>
-  <p>📧 Email: info@hanoverbakery.com</p>
-  <p>📞 Phone: +27 82 123 4567</p>
-</div>
+</br>
+  
 
+<!-- Footer -->
+<footer class="footer">
+  <div class="footer-left">
+    <a href="Contact.html"><b>Contact Us</b></a>
+    <p>Email: info@hanoverbakery.com</p>
+    <p>📞 Phone: +27 82 123 4567</p>
+  </div>
+
+  <div class="footer-right">
+    <a href="https://www.facebook.com/hanoverstreetbakery/">Facebook</a>
+    <p>📍<b>Address:</b> </p><p> Crosby Street, Johannesburg, South Africa</p>
+  </div>
+</footer>
 
 
 

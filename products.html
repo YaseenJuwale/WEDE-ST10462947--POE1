@@ -4,127 +4,164 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Products</title>
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <link rel="stylesheet" href="../WEDE ST10462947 POE1/Style.css">
+
+   
 </head>
 <body>
-   
-       <!-- Nav Bar -->
-    <nav class="navbar">
-        <table border="1" align="center" cellpadding="15" cellspacing="5">
-    <tr>
-        <td> <a href="Index.html">Homepage</a></td>
-             
-           <td>  <a href="About.html">About</a></td>
-            <td><a href="#">Products</a></td>   
-            <td>  <a href="Enquiry.html">Enquiry</a></td>
-           <td> <a href="Contact.html">Contacts</a></td>
-           
-    </tr>
-  </table>
-                   <table align="center">
-  <tr>
-    <td><img src="../WEDE ST10462947 POE1/h1.jpg" alt="Left Image" width="100"></td>
-    <td align="center"><h1>Hanover Bakery</h1></td>
-    <td><img src="../WEDE ST10462947 POE1/h1.jpg" alt="Right Image" width="100"></td>
-  </tr>
-</table>
+
+    <!-- Animated Background -->
+  <div id="bg-animation"></div>
+
+  <!-- Page Content -->
+  <div id="page-content">
+
+    <!-- Navbar with Hamburger -->
+<nav class="navbar">
+  <div class="nav-container">
+    <a href="#" class="nav-logo"> Hanover Bakery</a>
+    
+
+    <!-- Hamburger using checkbox -->
+<input type="checkbox" id="nav-toggle" class="nav-toggle-checkbox">
+<label for="nav-toggle" class="nav-toggle">
+  <span class="bar"></span>
+  <span class="bar"></span>
+  <span class="bar"></span>
+</label>
+
+
+    <!-- Nav Buttons -->
+    <ul class="nav-menu">
+      <li><a href="Index.html" class="nav-links">Homepage</a></li>
+      <li><a href="About.html" class="nav-links">About</a></li>
+      <li><a href="#" class="nav-links">Products</a></li>
+      <li><a href="Enquiry.html" class="nav-links">Enquiry</a></li>
+      <li><a href="Contact.html" class="nav-links">Contacts</a></li>
+    </ul>
+  </div>
+</nav>
+</br>
+    <!-- Header -->
+    <header class="header">
+      <img src="../WEDE ST10462947 POE1/h1.jpg" alt="Bakery Logo Left">
+      <h1>Hanover Bakery</h1>
+      <img src="../WEDE ST10462947 POE1/h1.jpg" alt="Bakery Logo Right">
+    </header>
+
+    
+    <hr>
+
   
-<h1 align="center">🍰Products 🍞</h1>
-<p align="center">Choose your favorite items and select your preferred flavor from the dropdown menus.</p>
+ 
+<h1 class="title">🍰 Products 🍞</h1>
+  <p class="subtitle">Choose your favorite items and select your preferred flavor from the dropdown menus.</p>
+  <hr class="divider">
+
+  <!-- Product Table -->
+  <div class="table-container">
+    <table class="product-table">
+
+      <!-- Table Header -->
+      <tr>
+        <th>Product</th>
+        <th>Image</th>
+        <th>Flavors</th>
+      </tr>
+
+      <!-- Product 1: Cakes -->
+      <tr>
+        <td><i class="fa-solid fa-cake-candles"></i> Cakes</td>
+        <td><img src="../WEDE ST10462947 POE1/Cakes.jpg" alt="Cakes"></td>
+        <td>
+          <label for="cake_flavor">Select Flavor:</label>
+          <select id="cake_flavor" name="cake_flavor">
+            <option value="chocolate">Chocolate</option>
+            <option value="vanilla">Vanilla</option>
+            <option value="red_velvet">Red Velvet</option>
+            <option value="caramel">Caramel</option>
+          </select>
+        </td>
+      </tr>
+
+      <!-- Product 2: Croissant -->
+      <tr>
+        <td><i class="fa-solid fa-bread-slice"></i> Croissant</td>
+        <td><img src="../WEDE ST10462947 POE1/Croissant.jpg" alt="Croissant"></td>
+        <td>
+          <label for="croissant_flavor">Select Flavor:</label>
+          <select id="croissant_flavor" name="croissant_flavor">
+            <option value="plain">Plain</option>
+            <option value="chocolate">Chocolate</option>
+            <option value="almond">Almond</option>
+            <option value="custard">Custard</option>
+          </select>
+        </td>
+      </tr>
+
+      <!-- Product 3: Rolls -->
+      <tr>
+        <td><i class="fa-solid fa-burger"></i> Bakery Rolls</td>
+        <td><img src="../WEDE ST10462947 POE1/Breads.jpg" alt="Rolls"></td>
+        <td>
+          <label for="rolls_flavor">Select Type:</label>
+          <select id="rolls_flavor" name="rolls_flavor">
+            <option value="plain">Plain Bread or Rolls</option>
+            <option value="butter">Sourdough</option>
+            <option value="herb">Whole Wheat</option>
+            <option value="cheese">Cheese Rolls</option>
+            <option value="Garlic">Garlic Bread</option>
+          </select>
+        </td>
+      </tr>
+
+      <!-- Product 4: Doughnuts -->
+      <tr>
+        <td><i class="fa-solid fa-circle"></i> Doughnuts</td>
+        <td><img src="../WEDE ST10462947 POE1/Doughnuts.jpg" alt="Doughnuts"></td>
+        <td>
+          <label for="Doughnut_flavor">Select Flavor:</label>
+          <select id="Doughnut_flavor" name="Doughnut_flavor">
+            <option value="caramel">Caramel</option>
+            <option value="chocolate">Chocolate</option>
+            <option value="strawberry">Strawberry</option>
+            <option value="barone">Bar One</option>
+          </select>
+        </td>
+      </tr>
+
+      <!-- Product 5: Savouries -->
+      <tr>
+        <td><i class="fa-solid fa-pizza-slice"></i> Savouries</td>
+        <td><img src="../WEDE ST10462947 POE1/Savouries.jpg" alt="Savouries"></td>
+        <td>
+          <label for="Savouries_type">Select Type:</label>
+          <select id="Savouries_type" name="Savouries_type">
+            <option value="samoosas">Samoosa's</option>
+            <option value="pies">Pies</option>
+            <option value="mini_pizza">Mini Pizza</option>
+            <option value="quiche">Quiche</option>
+          </select>
+        </td>
+      </tr>
+
+    </table>
+  </div>
 <hr>
 
-<!-- Product Table -->
-<table align="center" border="1" cellpadding="10" cellspacing="10">
+<!-- Footer -->
+<footer class="footer">
+  <div class="footer-left">
+    <a href="Contact.html">Contact Us</a>
+    <p>Email: info@hanoverbakery.com</p>
+    <p>📞 Phone: +27 82 123 4567</p>
+  </div>
 
-  <!-- Table Header -->
-  <tr>
-    <th>Product</th>
-    <th>Image</th>
-    <th>Flavors</th>
-  </tr>
-
-  <!-- Product 1: Cakes -->
-  <tr>
-    <td>Cakes</td>
-    <td><img src="../WEDE ST10462947 POE1/Cakes.jpg" alt="Cakes" width="150"></td>
-    <td>
-      <label for="cake_flavor">Select Flavor:</label>
-      <select id="cake_flavor" name="cake_flavor">
-        <option value="chocolate">Chocolate</option>
-        <option value="vanilla">Vanilla</option>
-        <option value="red_velvet">Red Velvet</option>
-        <option value="caramel">Caramel</option>
-      </select>
-    </td>
-  </tr>
-
-  <!-- Product 2: Croissant -->
-  <tr>
-    <td>Croissant</td>
-    <td><img src="../WEDE ST10462947 POE1/Croissant.jpg" alt="Croissant" width="150"></td>
-    <td>
-      <label for="croissant_flavor">Select Flavor:</label>
-      <select id="croissant_flavor" name="croissant_flavor">
-        <option value="plain">Plain</option>
-        <option value="chocolate">Chocolate</option>
-        <option value="almond">Almond</option>
-        <option value="custard">Custard</option>
-      </select>
-    </td>
-  </tr>
-
-  <!-- Product 3: Rolls -->
-  <tr>
-    <td>Bakery Rolls</td>
-    <td><img src="../WEDE ST10462947 POE1/Breads.jpg" alt="Rolls" width="150"></td>
-    <td>
-      <label for="rolls_flavor">Select Flavor:</label>
-      <select id="rolls_flavor" name="rolls_flavor">
-        <option value="plain">Plain Bread or Rolls</option>
-        <option value="butter">Sourdough</option>
-        <option value="herb">Whole Wheat</option>
-        <option value="cheese">Cheese Rolls</option>
-        <option value="Garlic">Garlic Bread</option>
-      </select>
-    </td>
-  </tr>
-
-  <!-- Product 4: Dougnuts -->
-  <tr>
-    <td>Dougnuts</td>
-    <td><img src="../WEDE ST10462947 POE1/Doughnuts.jpg" alt="Dougnuts" width="150"></td>
-    <td>
-      <label for="Doughnut_flavor">Select Flavor:</label>
-      <select id="Doughnut_flavor" name="Doughnut_flavor">
-        <option value="blueberry">Caramel</option>
-        <option value="chocolate">Chocolate</option>
-        <option value="banana">Strawberry</option>
-        <option value="cranberry">Bar One</option>
-      </select>
-    </td>
-  </tr>
-
-  <!-- Product 5:Savouries -->
-  <tr>
-    <td>Savouries</td>
-    <td><img src="../WEDE ST10462947 POE1/Savouries.jpg" alt="Savouries" width="150"></td>
-    <td>
-      <label for="Savouries_type">Select Type:</label>
-      <select id="Savouries_type" name="Savouries_type">
-        <option value="apple">Samoosa's</option>
-        <option value="custard">Pies</option>
-        <option value="chocolate">Mini Pizza</option>
-        <option value="berry">Quiche</option>
-      </select>
-    </td>
-  </tr>
-
-</table>
-<hr>
-    <!-- Footer section -->
-<p align="Center"> <a href="contact.html">Contact Us</a><br/>
-Email:info@hanoverbakery.com<br/>
-<a href="https://www.facebook.com/hanoverstreetbakery/">Facebook></a>
-</p>
+  <div class="footer-right">
+    <a href="https://www.facebook.com/hanoverstreetbakery/">Facebook</a>
+    <p>📍<b>Address:</b> </p><p> Crosby Street, Johannesburg, South Africa</p>
+  </div>
          
 </body>
 </html>

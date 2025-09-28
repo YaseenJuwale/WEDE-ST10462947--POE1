@@ -4,99 +4,146 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Enquiry</title>
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <link rel="stylesheet" href="../WEDE ST10462947 POE1/Style.css">
 </head>
 <body>
-               <!-- Nav Bar -->
-    <nav class="navbar">
-        <table border="1" align="center" cellpadding="15" cellspacing="5">
-    <tr>
-        
-<td>  <a href="Index.html">Homepage</a></td>
-<td>  <a href="About.html">About</a></td>
-        <td> <a href="Products.html">Products</a></td>
-        <td><a href="#">Enquiry</a></td>   
-        <td> <a href="Contact.html">Contact</a></td>
-        
-         
-    </tr>
-</table>
-  <table align="center">
-  <tr>
-    <td><img src="../WEDE ST10462947 POE1/h1.jpg" alt="Left Image" width="100"></td>
-    <td align="center"><h1>Hanover Bakery</h1></td>
-    <td><img src="../WEDE ST10462947 POE1/h1.jpg" alt="Right Image" width="100"></td>
-  </tr>
-</table>
-  <h1 align="center">🍞 Enquiries Form 🍰</h1>
-  <p align="center">Please fill in your details below. Fields marked with * are required.</p>
-  <hr>
+      <!-- Animated Background -->
+  <div id="bg-animation"></div>
 
-  <form action="#" method="post" >
+  <!-- Page Content -->
+  <div id="page-content">
 
-    <!-- Name -->
-    <label for="fname"><b>First Name*:</b></label><br>
-    <input type="text" id="fname" name="fname" required><br><br>
-
-    <!-- Surname -->
-    <label for="lname"><b>Surname*:</b></label><br>
-    <input type="text" id="lname" name="lname" required><br><br>
-
-    <!-- Email -->
-    <label for="email"><b>Email*:</b></label><br>
-    <input type="email" id="email" name="email" placeholder="example@email.com" required><br><br>
-
-    <!-- Contact No -->
-    <label for="contact"><b>Contact No*:</b></label><br>
-    <input type="tel" id="contact" name="contact" placeholder="+27 82 123 4567" required><br><br>
-
-    <!-- Category Dropdown -->
-    <label for="requestType"><b>Category*:</b></label><br>
-    <select id="requestType" name="requestType" required>
-      <option value="">-- Please Select --</option>
-      <option value="orders">Orders (Cakes) - For placing cake and pastry orders</option>
-      <option value="quotes">Quotes - Request price quotes for bulk ingredients</option>
-      <option value="supplies">Supplies - Request baking ingredients & raw materials</option>
-      <option value="custom">Custom Cakes - Special event designs & themes</option>
-      <option value="wholesale">Wholesale Orders - Large bulk purchases for resale</option>
-      <option value="delivery">Delivery Requests - Schedule and confirm deliveries</option>
-      <option value="feedback">Feedback - Share your experience with Hanover Bakery</option>
-      <option value="other">Other</option>
-    </select><br><br>
-
-    <!-- Other Description -->
-    <label for="otherDesc"><b>If Other, please describe:</b></label><br>
-    <textarea id="otherDesc" name="otherDesc" rows="4" cols="40" placeholder="Write your description here..."></textarea><br><br>
-
+    <!-- Navbar with Hamburger -->
+<nav class="navbar">
+  <div class="nav-container">
+    <a href="#" class="nav-logo"> Hanover Bakery</a>
     
 
-  <hr>
-  <!-- FAQ Section -->
-  <h2 align="center">❓ Frequently Asked Questions (FAQs)</h2>
-  <ul>
-    <li><b>Q1:</b> What are your bakery’s operating hours?<br>
-        <i>A:</i> We are open Monday to Saturday, 7:00 AM – 6:00 PM.</li><br>
+    <!-- Hamburger using checkbox -->
+<input type="checkbox" id="nav-toggle" class="nav-toggle-checkbox">
+<label for="nav-toggle" class="nav-toggle">
+  <span class="bar"></span>
+  <span class="bar"></span>
+  <span class="bar"></span>
+</label>
 
-    <li><b>Q2:</b> Do you offer gluten-free and sugar-free products?<br>
-        <i>A:</i> Yes, we do offer a variety of healthier options available.</li><br>
 
-    <li><b>Q3:</b> How do I place a custom cake order?<br>
-        <i>A:</i> Simply select "Custom Cakes" in the form above and include your design details.</li><br>
+    <!-- Nav Buttons -->
+    <ul class="nav-menu">
+      <li><a href="Index.html" class="nav-links">Homepage</a></li>
+      <li><a href="About.html" class="nav-links">About</a></li>
+      <li><a href="products.html" class="nav-links">Products</a></li>
+      <li><a href="#" class="nav-links">Enquiry</a></li>
+      <li><a href="Contact.html" class="nav-links">Contacts</a></li>
+    </ul>
+  </div>
+</nav>
+</br>
+    <!-- Header -->
+    <header class="header">
+      <img src="../WEDE ST10462947 POE1/h1.jpg" alt="Bakery Logo Left">
+      <h1>Hanover Bakery</h1>
+      <img src="../WEDE ST10462947 POE1/h1.jpg" alt="Bakery Logo Right">
+    </header>
 
-    <li><b>Q4:</b> Do you provide delivery services?<br>
-        <i>A:</i> Yes, delivery can be scheduled through the “Delivery Requests” option.</li><br>
+   
+    <hr>
+</table>
+ 
+   <div class="form-container">
 
-    <li><b>Q5:</b> Where are you located?<br>
-        <i>A:</i> Hanover Bakery, Mayfair, Hanover Street.</li><br>
-  </ul>
-<!-- Submit Button -->
-    <input type="submit" value="Submit Form">
-  </form>
-  <hr>
-  <!-- Footer secttion -->
-  <p align="Center"> <a href="contact.html">Contact Us</a><br/>
-Email:info@hanoverbakery.com<br/>
-<a href="https://www.facebook.com/hanoverstreetbakery/">Facebook</a>
-</p>
+    <h1 class="form-title"><i class="fas fa-bread-slice"></i> Enquiries Form <i class="fas fa-cake-candles"></i></h1>
+    <p class="form-subtitle">Please fill in your details below. Fields marked with * are required.</p>
+    <hr>
+
+    <form action="#" method="post">
+
+      <!-- Name -->
+      <div class="input-box">
+        <i class="fas fa-user"></i>
+        <input type="text" id="fname" name="fname" placeholder="First Name*" required>
+      </div>
+
+      <div class="input-box">
+        <i class="fas fa-user"></i>
+        <input type="text" id="lname" name="lname" placeholder="Surname*" required>
+      </div>
+
+      <!-- Email -->
+      <div class="input-box">
+        <i class="fas fa-envelope"></i>
+        <input type="email" id="email" name="email" placeholder="Email*" required>
+      </div>
+
+      <!-- Contact No -->
+      <div class="input-box">
+        <i class="fas fa-phone"></i>
+        <input type="tel" id="contact" name="contact" placeholder="Contact No*" required>
+      </div>
+
+      <!-- Category Dropdown -->
+      <div class="input-box">
+        <i class="fas fa-list"></i>
+        <select id="requestType" name="requestType" required>
+          <option value="">-- Please Select --</option>
+          <option value="orders">Orders (Cakes)</option>
+          <option value="quotes">Quotes</option>
+          <option value="supplies">Supplies</option>
+          <option value="custom">Custom Cakes</option>
+          <option value="wholesale">Wholesale Orders</option>
+          <option value="delivery">Delivery Requests</option>
+          <option value="feedback">Feedback</option>
+          <option value="other">Other</option>
+        </select>
+      </div>
+
+      <!-- Other Description -->
+      <div class="input-box">
+        <i class="fas fa-pen"></i>
+        <textarea id="otherDesc" name="otherDesc" rows="4" placeholder="If Other, please describe..."></textarea>
+      </div>
+
+      <input type="submit" value="Submit Form" class="submit-btn">
+
+    </form>
+
+    <!-- FAQ Section -->
+    <div class="faq-section">
+      <h2 class="faq-title"><i class="fas fa-question-circle"></i> Frequently Asked Questions</h2>
+      <ul class="faq-list">
+        <li><b>Q1:</b> What are your bakery’s operating hours?<br>
+            <i class="fas fa-reply"></i> We are open Monday to Saturday, 7:00 AM – 6:00 PM.</li>
+
+        <li><b>Q2:</b> Do you offer gluten-free and sugar-free products?<br>
+            <i class="fas fa-reply"></i> Yes, we do offer a variety of healthier options.</li>
+
+        <li><b>Q3:</b> How do I place a custom cake order?<br>
+            <i class="fas fa-reply"></i> Select "Custom Cakes" in the form above and include your design details.</li>
+
+        <li><b>Q4:</b> Do you provide delivery services?<br>
+            <i class="fas fa-reply"></i> Yes, delivery can be scheduled through the “Delivery Requests” option.</li>
+
+        <li><b>Q5:</b> Where are you located?<br>
+            <i class="fas fa-reply"></i> Hanover Bakery, Mayfair, Hanover Street.</li>
+      </ul>
+    </div>
+
+  </div>
+
+ <!-- Footer -->
+<footer class="footer">
+  <div class="footer-left">
+    <a href="Contact.html">Contact Us</a>
+    <p>Email: info@hanoverbakery.com</p>
+    <p>📞 Phone: +27 82 123 4567</p>
+  </div>
+
+  <div class="footer-right">
+    <a href="https://www.facebook.com/hanoverstreetbakery/">Facebook</a>
+    <p>📍<b>Address:</b> </p><p> Crosby Street, Johannesburg, South Africa</p>
+  </div>
+
 
 
 

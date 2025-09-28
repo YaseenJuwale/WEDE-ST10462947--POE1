@@ -4,56 +4,106 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Homepage</title>
+     <!-- Font Awesome for Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+    <link rel="stylesheet" href="../WEDE ST10462947 POE1/Style.css">
 </head>
 <body>
-    <!-- Nav Bar -->
-    <nav class="navbar">
-        <table border="1" align="center" cellpadding="15" cellspacing="5">
-    <tr>
-        <td><a href="#">Homepage</a></td>    
-           <td>  <a href="About.html">About</a></td>
-           
-           <td> <a href="Products.html">Products</a></td>
-           <td>  <a href="Enquiry.html">Enquiry</a></td>
-           <td> <a href="Contact.html">Contacts</a></td>
-    </tr>
-  </table>
+    <!-- Animated Background -->
+  <div id="bg-animation"></div>
 
-<hr>
-              <br/>
-          <table align="center">
-  <tr>
-    <td><img src="../WEDE ST10462947 POE1/h1.jpg" alt="Left Image" width="100"></td>
-    <td align="center"><h1>Hanover Bakery</h1></td>
-    <td><img src="../WEDE ST10462947 POE1/h1.jpg" alt="Right Image" width="100"></td>
-  </tr>
-</table>
-            
-             
-               <h2 align="Center">Welcome</h2>
-            
-            <p> Welcome to <i>Hanover Bakery</i>, where<b> flavor and tradition collide.</b> We use the freshest ingredients to handcraft each loaf, cake, and pastry, guaranteeing that every taste is full of quality and attention to detail.  We are here to make life a bit more wonderful, whether you are here for your daily bread, a sweet celebration, or just a moment of solace.</p>
-<!-- Creating a Table With Images -->
-          <table align="center">
-<tr>
-<td align="Center"><p ><h3>Cakes</h3></p><img src="../WEDE ST10462947 POE1/Cakes.jpg" alt="Cakes" width="350"></td>
-<td align="center"><p ><h3>Croissants</h3></p><img src="../WEDE ST10462947 POE1/Croissant.jpg" alt="Croissants" width="410"></td>
-<td align="center"><p ><h3>Rolls</h3></p><img src="../WEDE ST10462947 POE1/Breads.jpg" alt="Rolls" width="350"></td>
+  <!-- Page Content -->
+  <div id="page-content">
 
- </tr>
-</table>
-<!-- Adding a Catalog -->
- <h3>Check Our Catalog</h3>
-  <p>
-    Want to see our full range of baked goods?  
-    <a href="products.html"><br/>Click here to view our catalog</a>.
-  </p>
+    <!-- Navbar with Hamburger -->
+<nav class="navbar">
+  <div class="nav-container">
+    <a href="#" class="nav-logo"> Hanover Bakery
+      </a>
+
+    <!-- Hamburger using checkbox -->
+<input type="checkbox" id="nav-toggle" class="nav-toggle-checkbox">
+<label for="nav-toggle" class="nav-toggle">
+  <span class="bar"></span>
+  <span class="bar"></span>
+  <span class="bar"></span>
+</label>
+
+
+    <!-- Nav Buttons -->
+    <ul class="nav-menu">
+      <li><a href="#" class="nav-links">Homepage</a></li>
+      <li><a href="About.html" class="nav-links">About</a></li>
+      <li><a href="products.html" class="nav-links">Products</a></li>
+      <li><a href="Enquiry.html" class="nav-links">Enquiry</a></li>
+      <li><a href="Contact.html" class="nav-links">Contacts</a></li>
+    </ul>
+  </div>
+</nav>
+</br>
+    <!-- Header -->
+    <header class="header">
+      <img src="../WEDE ST10462947 POE1/h1.jpg" alt="Bakery Logo Left">
+      <h1>Hanover Bakery</h1>
+      <img src="../WEDE ST10462947 POE1/h1.jpg" alt="Bakery Logo Right">
+    </header>
 <hr>
-<!-- Footer section -->
-<p align="Center"> <a href="contact.html">Contact Us</a><br/>
-Email:info@hanoverbakery.com<br/>
-<a href="https://www.facebook.com/hanoverstreetbakery/">Facebook></a>
-</p>
+
+ <!-- Welcome Section -->
+  <section class="welcome">
+    <h2>Welcome</h2>
+    <p>
+      Welcome to <i>Hanover Bakery</i>, where <b>flavor and tradition collide.</b>  
+      We use the freshest ingredients to handcraft each loaf, cake, and pastry,  
+      guaranteeing that every taste is full of quality and attention to detail.  
+      We are here to make life a bit more wonderful, whether you are here for your daily bread,  
+      a sweet celebration, or just a moment of solace.
+    </p>
+  </section>
+
+  <!-- Products Grid -->
+  <section class="products">
+    <div class="product-card">
+      <h3>Cakes</h3>
+      <img src="../WEDE ST10462947 POE1/Cakes.jpg" alt="Cakes">
+    </div>
+
+    <div class="product-card">
+      <h3>Croissants</h3>
+      <img src="../WEDE ST10462947 POE1/Croissant.jpg" alt="Croissants">
+    </div>
+
+    <div class="product-card">
+      <h3>Rolls</h3>
+      <img src="../WEDE ST10462947 POE1/Breads.jpg" alt="Rolls">
+    </div>
+  </section>
+
+  <!-- Catalog Section -->
+  <section class="catalog">
+    <h3>Check Our Catalog</h3>
+    <p>
+      Want to see our full range of baked goods?  
+      <a href="products.html">Click here to view our catalog</a>.
+    </p>
+  </section>
+
+</br>
+<!-- Footer -->
+<footer class="footer">
+  <div class="footer-left">
+    <a href="Contact.html">Contact Us</a>
+    <p>Email: info@hanoverbakery.com</p>
+    <p>📞 Phone: +27 82 123 4567</p>
+  </div>
+
+  <div class="footer-right">
+    <a href="https://www.facebook.com/hanoverstreetbakery/">Facebook</a>
+    <p>📍<b>Address:</b> </p><p> Crosby Street, Johannesburg, South Africa</p>
+  </div>
+
+ 
 
 
 </body>
