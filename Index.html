@@ -1,17 +1,67 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Homepage</title>
-     <!-- Font Awesome for Icons -->
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <!-- SEO Title & Description -->
+  <title>Hanover Bakery | Fresh Cakes, Breads & Pastries in Johannesburg</title>
+  <meta name="description" content="Visit Hanover Bakery in Johannesburg for freshly baked cakes, breads, croissants, and pastries. Custom orders and delivery available.">
 
-    <link rel="stylesheet" href="../WEDE ST10462947 POE1/Style.css">
+  <!-- Keywords (optional, mostly ignored by Google) -->
+  <meta name="keywords" content="Bakery, Cakes, Breads, Pastries, Custom Cakes, Johannesburg Bakery">
+
+  <!-- Open Graph (for social sharing) -->
+  <meta property="og:title" content="Hanover Bakery | Fresh Cakes & Bakes">
+  <meta property="og:description" content="Hanover Bakery offers fresh cakes, breads, and pastries in Johannesburg. Place custom orders today!">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://www.yourwebsite.com/index.html">
+  <meta property="og:image" content="https://www.yourwebsite.com/images/h1.jpg">
+
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Hanover Bakery | Fresh Cakes & Bakes">
+  <meta name="twitter:description" content="Hanover Bakery offers fresh cakes, breads, and pastries in Johannesburg.">
+  <meta name="twitter:image" content="https://www.yourwebsite.com/images/h1.jpg">
+
+  <!-- Structured Data (JSON-LD) -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Bakery",
+    "name": "Hanover Bakery",
+    "image": "https://www.yourwebsite.com/images/h1.jpg",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "Crosby Street",
+      "addressLocality": "Johannesburg",
+      "addressCountry": "ZA"
+    },
+    "telephone": "+27 82 123 4567",
+    "url": "https://www.yourwebsite.com"
+  }
+  </script>
+
+  <!-- Favicon -->
+  <link rel="icon" href="../WEDE ST10462947 POE1/favicon.ico" type="image/x-icon">
+
+  <!-- CSS & Fonts -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <link rel="stylesheet" href="../WEDE ST10462947 POE1/Style.css">
+</head>
 </head>
 <body>
-    <!-- Animated Background -->
+  <script src="../WEDE ST10462947 POE1/Script.js"></script>
+      <!-- Animated Background -->
   <div id="bg-animation"></div>
+
+  <!-- Live Background -->
+<canvas id="live-bg"></canvas>
+
+<!-- Cursor Container -->
+<div id="icon-container"></div>
+
 
   <!-- Page Content -->
   <div id="page-content">
@@ -19,8 +69,8 @@
     <!-- Navbar with Hamburger -->
 <nav class="navbar">
   <div class="nav-container">
-    <a href="#" class="nav-logo"> Hanover Bakery
-      </a>
+    <a href="#" class="nav-logo"> Hanover Bakery</a>
+    
 
     <!-- Hamburger using checkbox -->
 <input type="checkbox" id="nav-toggle" class="nav-toggle-checkbox">
@@ -33,14 +83,15 @@
 
     <!-- Nav Buttons -->
     <ul class="nav-menu">
-      <li><a href="#" class="nav-links">Homepage</a></li>
+      <li><a href="Index.html" class="nav-links">Homepage</a></li>
       <li><a href="About.html" class="nav-links">About</a></li>
       <li><a href="products.html" class="nav-links">Products</a></li>
-      <li><a href="Enquiry.html" class="nav-links">Enquiry</a></li>
+      <li><a href="#" class="nav-links">Enquiry</a></li>
       <li><a href="Contact.html" class="nav-links">Contacts</a></li>
     </ul>
   </div>
 </nav>
+</br>
 </br>
     <!-- Header -->
     <header class="header">

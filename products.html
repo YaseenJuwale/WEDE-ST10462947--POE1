@@ -1,153 +1,238 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Products</title>
-     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
-    <link rel="stylesheet" href="../WEDE ST10462947 POE1/Style.css">
+  <head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Hanover Bakery Products | Cakes, Breads & Pastries</title>
+  <meta name="description" content="Explore Hanover Bakery's full range of products: cakes, croissants, rolls, doughnuts, and savouries. Freshly baked in Johannesburg.">
 
-   
+  <!-- Open Graph -->
+  <meta property="og:title" content="Hanover Bakery Products">
+  <meta property="og:description" content="Fresh cakes, breads, pastries, and savouries from Hanover Bakery. Place your order today!">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://www.yourwebsite.com/products.html">
+  <meta property="og:image" content="https://www.yourwebsite.com/images/products.jpg">
+
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Hanover Bakery Products">
+  <meta name="twitter:description" content="Fresh cakes, breads, pastries, and savouries from Hanover Bakery.">
+  <meta name="twitter:image" content="https://www.yourwebsite.com/images/products.jpg">
+
+  <!-- Structured Data (Product List) -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "ItemList",
+    "name": "Hanover Bakery Products",
+    "itemListElement": [
+      {
+        "@type": "Product",
+        "name": "Cakes",
+        "image": "https://www.yourwebsite.com/images/cakes.jpg"
+      },
+      {
+        "@type": "Product",
+        "name": "Croissants",
+        "image": "https://www.yourwebsite.com/images/croissants.jpg"
+      },
+      {
+        "@type": "Product",
+        "name": "Bakery Rolls",
+        "image": "https://www.yourwebsite.com/images/rolls.jpg"
+      },
+      {
+        "@type": "Product",
+        "name": "Doughnuts",
+        "image": "https://www.yourwebsite.com/images/doughnuts.jpg"
+      },
+      {
+        "@type": "Product",
+        "name": "Savouries",
+        "image": "https://www.yourwebsite.com/images/savouries.jpg"
+      }
+    ]
+  }
+  </script>
+
+  <link rel="icon" href="../WEDE ST10462947 POE1/favicon.ico" type="image/x-icon">
+  <link rel="stylesheet" href="../WEDE ST10462947 POE1/Style.css">
+</head>
 </head>
 <body>
+  <script src="../WEDE ST10462947 POE1/Script.js"></script>
 
     <!-- Animated Background -->
   <div id="bg-animation"></div>
+<!-- Live Background -->
+<canvas id="live-bg"></canvas>
+
+<!-- Cursor Container -->
+<div id="icon-container"></div>
 
   <!-- Page Content -->
   <div id="page-content">
 
-    <!-- Navbar with Hamburger -->
-<nav class="navbar">
-  <div class="nav-container">
-    <a href="#" class="nav-logo"> Hanover Bakery</a>
-    
 
-    <!-- Hamburger using checkbox -->
-<input type="checkbox" id="nav-toggle" class="nav-toggle-checkbox">
-<label for="nav-toggle" class="nav-toggle">
-  <span class="bar"></span>
-  <span class="bar"></span>
-  <span class="bar"></span>
-</label>
-
-
-    <!-- Nav Buttons -->
-    <ul class="nav-menu">
-      <li><a href="Index.html" class="nav-links">Homepage</a></li>
-      <li><a href="About.html" class="nav-links">About</a></li>
-      <li><a href="#" class="nav-links">Products</a></li>
-      <li><a href="Enquiry.html" class="nav-links">Enquiry</a></li>
-      <li><a href="Contact.html" class="nav-links">Contacts</a></li>
-    </ul>
-  </div>
-</nav>
-</br>
-    <!-- Header -->
-    <header class="header">
-      <img src="../WEDE ST10462947 POE1/h1.jpg" alt="Bakery Logo Left">
-      <h1>Hanover Bakery</h1>
-      <img src="../WEDE ST10462947 POE1/h1.jpg" alt="Bakery Logo Right">
-    </header>
-
-    
-    <hr>
 
   
  
-<h1 class="title">🍰 Products 🍞</h1>
+
+  
+
+  <!-- Navbar -->
+  <nav class="navbar">
+    <div class="nav-container">
+      <a href="Index.html" class="nav-logo">Hanover Bakery</a>
+      <input type="checkbox" id="nav-toggle" class="nav-toggle-checkbox">
+      <label for="nav-toggle" class="nav-toggle">
+        <span class="bar"></span>
+        <span class="bar"></span>
+        <span class="bar"></span>
+      </label>
+      <ul class="nav-menu">
+        <li><a href="Index.html" class="nav-links">Homepage</a></li>
+        <li><a href="About.html" class="nav-links">About</a></li>
+        <li><a href="products.html" class="nav-links">Products</a></li>
+        <li><a href="Enquiry.html" class="nav-links">Enquiry</a></li>
+        <li><a href="Contact.html" class="nav-links">Contacts</a></li>
+      </ul>
+    </div>
+  </nav>
+</br>
+  <h1 class="title">🍰 Products 🍞</h1>
   <p class="subtitle">Choose your favorite items and select your preferred flavor from the dropdown menus.</p>
   <hr class="divider">
 
+
+
+</br>
   <!-- Product Table -->
-  <div class="table-container">
-    <table class="product-table">
+   <div class="search-box">
+  <input type="text" id="product-search" placeholder="Search for a product...">
+</div>
+<div class="table-container">
+  <table class="product-table">
+    <tr>
+      <th>Product</th>
+      <th>Image</th>
+      <th>Flavors / Types</th>
+      <th>Price (R)</th>
+      <th>Quantity</th>
+      <th>Action</th>
+    </tr>
 
-      <!-- Table Header -->
-      <tr>
-        <th>Product</th>
-        <th>Image</th>
-        <th>Flavors</th>
-      </tr>
+    <!-- Cakes -->
+    <tr data-price="50">
+      <td><i class="fa-solid fa-cake-candles"></i> Cakes</td>
+      <td><img src="../WEDE ST10462947 POE1/Cakes.jpg" alt="Cakes"></td>
+      <td>
+        <select>
+          <option value="Chocolate">Chocolate</option>
+          <option value="Vanilla">Vanilla</option>
+          <option value="Red Velvet">Red Velvet</option>
+          <option value="Caramel">Caramel</option>
+        </select>
+      </td>
+      <td>50</td>
+      <td><input type="number" class="quantity-input" value="1" min="1"></td>
+      <td><button class="add-cart-btn">Add to Cart</button></td>
+    </tr>
 
-      <!-- Product 1: Cakes -->
-      <tr>
-        <td><i class="fa-solid fa-cake-candles"></i> Cakes</td>
-        <td><img src="../WEDE ST10462947 POE1/Cakes.jpg" alt="Cakes"></td>
-        <td>
-          <label for="cake_flavor">Select Flavor:</label>
-          <select id="cake_flavor" name="cake_flavor">
-            <option value="chocolate">Chocolate</option>
-            <option value="vanilla">Vanilla</option>
-            <option value="red_velvet">Red Velvet</option>
-            <option value="caramel">Caramel</option>
-          </select>
-        </td>
-      </tr>
+    <!-- Croissant -->
+    <tr data-price="30">
+      <td><i class="fa-solid fa-bread-slice"></i> Croissant</td>
+      <td><img src="../WEDE ST10462947 POE1/Croissant.jpg" alt="Croissant"></td>
+      <td>
+        <select>
+          <option value="Plain">Plain</option>
+          <option value="Chocolate">Chocolate</option>
+          <option value="Almond">Almond</option>
+          <option value="Custard">Custard</option>
+        </select>
+      </td>
+      <td>30</td>
+      <td><input type="number" class="quantity-input" value="1" min="1"></td>
+      <td><button class="add-cart-btn">Add to Cart</button></td>
+    </tr>
 
-      <!-- Product 2: Croissant -->
-      <tr>
-        <td><i class="fa-solid fa-bread-slice"></i> Croissant</td>
-        <td><img src="../WEDE ST10462947 POE1/Croissant.jpg" alt="Croissant"></td>
-        <td>
-          <label for="croissant_flavor">Select Flavor:</label>
-          <select id="croissant_flavor" name="croissant_flavor">
-            <option value="plain">Plain</option>
-            <option value="chocolate">Chocolate</option>
-            <option value="almond">Almond</option>
-            <option value="custard">Custard</option>
-          </select>
-        </td>
-      </tr>
+    <!-- Bakery Rolls -->
+    <tr data-price="40">
+      <td><i class="fa-solid fa-burger"></i> Bakery Rolls</td>
+      <td><img src="../WEDE ST10462947 POE1/Breads.jpg" alt="Rolls"></td>
+      <td>
+        <select>
+          <option value="Plain Bread">Plain Bread or Rolls</option>
+          <option value="Sourdough">Sourdough</option>
+          <option value="Whole Wheat">Whole Wheat</option>
+          <option value="Cheese Rolls">Cheese Rolls</option>
+          <option value="Garlic Bread">Garlic Bread</option>
+        </select>
+      </td>
+      <td>40</td>
+      <td><input type="number" class="quantity-input" value="1" min="1"></td>
+      <td><button class="add-cart-btn">Add to Cart</button></td>
+    </tr>
 
-      <!-- Product 3: Rolls -->
-      <tr>
-        <td><i class="fa-solid fa-burger"></i> Bakery Rolls</td>
-        <td><img src="../WEDE ST10462947 POE1/Breads.jpg" alt="Rolls"></td>
-        <td>
-          <label for="rolls_flavor">Select Type:</label>
-          <select id="rolls_flavor" name="rolls_flavor">
-            <option value="plain">Plain Bread or Rolls</option>
-            <option value="butter">Sourdough</option>
-            <option value="herb">Whole Wheat</option>
-            <option value="cheese">Cheese Rolls</option>
-            <option value="Garlic">Garlic Bread</option>
-          </select>
-        </td>
-      </tr>
+    <!-- Doughnuts -->
+    <tr data-price="25">
+      <td><i class="fa-solid fa-circle"></i> Doughnuts</td>
+      <td><img src="../WEDE ST10462947 POE1/Doughnuts.jpg" alt="Doughnuts"></td>
+      <td>
+        <select>
+          <option value="Caramel">Caramel</option>
+          <option value="Chocolate">Chocolate</option>
+          <option value="Strawberry">Strawberry</option>
+          <option value="Bar One">Bar One</option>
+        </select>
+      </td>
+      <td>25</td>
+      <td><input type="number" class="quantity-input" value="1" min="1"></td>
+      <td><button class="add-cart-btn">Add to Cart</button></td>
+    </tr>
 
-      <!-- Product 4: Doughnuts -->
-      <tr>
-        <td><i class="fa-solid fa-circle"></i> Doughnuts</td>
-        <td><img src="../WEDE ST10462947 POE1/Doughnuts.jpg" alt="Doughnuts"></td>
-        <td>
-          <label for="Doughnut_flavor">Select Flavor:</label>
-          <select id="Doughnut_flavor" name="Doughnut_flavor">
-            <option value="caramel">Caramel</option>
-            <option value="chocolate">Chocolate</option>
-            <option value="strawberry">Strawberry</option>
-            <option value="barone">Bar One</option>
-          </select>
-        </td>
-      </tr>
+    <!-- Savouries -->
+    <tr data-price="35">
+      <td><i class="fa-solid fa-pizza-slice"></i> Savouries</td>
+      <td><img src="../WEDE ST10462947 POE1/Savouries.jpg" alt="Savouries"></td>
+      <td>
+        <select>
+          <option value="Samoosas">Samoosa's</option>
+          <option value="Pies">Pies</option>
+          <option value="Mini Pizza">Mini Pizza</option>
+          <option value="Quiche">Quiche</option>
+        </select>
+      </td>
+      <td>35</td>
+      <td><input type="number" class="quantity-input" value="1" min="1"></td>
+      <td><button class="add-cart-btn">Add to Cart</button></td>
+    </tr>
 
-      <!-- Product 5: Savouries -->
-      <tr>
-        <td><i class="fa-solid fa-pizza-slice"></i> Savouries</td>
-        <td><img src="../WEDE ST10462947 POE1/Savouries.jpg" alt="Savouries"></td>
-        <td>
-          <label for="Savouries_type">Select Type:</label>
-          <select id="Savouries_type" name="Savouries_type">
-            <option value="samoosas">Samoosa's</option>
-            <option value="pies">Pies</option>
-            <option value="mini_pizza">Mini Pizza</option>
-            <option value="quiche">Quiche</option>
-          </select>
-        </td>
-      </tr>
+  </table>
+</div>
 
-    </table>
-  </div>
+<div class="cart-panel" id="cart-panel">
+  <h2>Shopping Cart</h2>
+  <table id="cart-table">
+    <tr>
+      <th>Product</th>
+      <th>Flavor / Type</th>
+      <th>Quantity</th>
+      <th>Price</th>
+      <th>Action</th>
+    </tr>
+    <!-- Cart items will appear here -->
+  </table>
+  <div id="cart-total" style="text-align:right; margin-top:10px; font-weight:bold;"></div>
+  <button class="checkout-btn" id="checkout-btn">Checkout</button>
+</div>
+
+ <button id="view-cart-btn" class="view-cart-btn">View Cart 🛒</button>
+
+</body>
+</html>
+
 <hr>
 
 <!-- Footer -->

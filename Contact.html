@@ -1,44 +1,102 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Contact</title>
-    <link rel="stylesheet" href="../WEDE ST10462947 POE1/Style.css">
-      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+ <head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact Hanover Bakery</title>
+  <meta name="description" content="Contact Hanover Bakery for questions, feedback, or assistance. Find our address, email, and phone number.">
+
+  <!-- Open Graph -->
+  <meta property="og:title" content="Contact Hanover Bakery">
+  <meta property="og:description" content="Reach out to Hanover Bakery for queries, orders, or feedback.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://www.yourwebsite.com/contact.html">
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "ContactPage",
+    "name": "Contact Page",
+    "url": "https://www.yourwebsite.com/contact.html",
+    "telephone": "+27 82 123 4567",
+    "email": "info@hanoverbakery.com",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "Crosby Street",
+      "addressLocality": "Johannesburg",
+      "addressCountry": "ZA"
+    }
+  }
+  </script>
+
+  <link rel="icon" href="../WEDE ST10462947 POE1/favicon.ico" type="image/x-icon">
+  <link rel="stylesheet" href="../WEDE ST10462947 POE1/Style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  
+</head>
 </head>
 <body>
-     <!-- Animated Background -->
+
+   
+  <script src="../WEDE ST10462947 POE1/Script.js"></script>
+
+    <!-- Animated Background -->
   <div id="bg-animation"></div>
+<!-- Live Background -->
+<canvas id="live-bg"></canvas>
+
+<!-- Cursor Container -->
+<div id="icon-container"></div>
 
   <!-- Page Content -->
   <div id="page-content">
 
-    <!-- Navbar with Hamburger -->
-<nav class="navbar">
-  <div class="nav-container">
-    <a href="#" class="nav-logo"> Hanover Bakery</a>
-    
-
-    <!-- Hamburger using checkbox -->
-<input type="checkbox" id="nav-toggle" class="nav-toggle-checkbox">
-<label for="nav-toggle" class="nav-toggle">
-  <span class="bar"></span>
-  <span class="bar"></span>
-  <span class="bar"></span>
-</label>
 
 
-    <!-- Nav Buttons -->
-    <ul class="nav-menu">
-      <li><a href="Index.html" class="nav-links">Homepage</a></li>
-      <li><a href="About.html" class="nav-links">About</a></li>
-      <li><a href="products.html" class="nav-links">Products</a></li>
-      <li><a href="Enquiry.html" class="nav-links">Enquiry</a></li>
-      <li><a href="#" class="nav-links">Contacts</a></li>
-    </ul>
+   <!-- Gallery Section -->
+<section class="gallery-section">
+  <h2>Our Gallery</h2>
+  <div class="gallery-container">
+    <img src="../WEDE ST10462947 POE1/Cakes.jpg" alt="Cakes" class="gallery-item">
+    <img src="../WEDE ST10462947 POE1/Croissant.jpg" alt="Croissant" class="gallery-item">
+    <img src="../WEDE ST10462947 POE1/Breads.jpg" alt="Bakery Rolls" class="gallery-item">
+    <img src="../WEDE ST10462947 POE1/Doughnuts.jpg" alt="Doughnuts" class="gallery-item">
+    <img src="../WEDE ST10462947 POE1/Savouries.jpg" alt="Savouries" class="gallery-item">
   </div>
-</nav>
+</section>
+
+<!-- Lightbox Modal -->
+<div id="lightbox" class="lightbox">
+  <span class="close">&times;</span>
+  <img class="lightbox-content" id="lightbox-img" alt="">
+  <div id="caption"></div>
+</div>
+
+ 
+
+  
+
+  <!-- Navbar -->
+  <nav class="navbar">
+    <div class="nav-container">
+      <a href="Index.html" class="nav-logo">Hanover Bakery</a>
+      <input type="checkbox" id="nav-toggle" class="nav-toggle-checkbox">
+      <label for="nav-toggle" class="nav-toggle">
+        <span class="bar"></span>
+        <span class="bar"></span>
+        <span class="bar"></span>
+      </label>
+      <ul class="nav-menu">
+        <li><a href="Index.html" class="nav-links">Homepage</a></li>
+        <li><a href="About.html" class="nav-links">About</a></li>
+        <li><a href="products.html" class="nav-links">Products</a></li>
+        <li><a href="Enquiry.html" class="nav-links">Enquiry</a></li>
+        <li><a href="Contact.html" class="nav-links">Contacts</a></li>
+      </ul>
+    </div>
+  </nav>
+
 </br>
     <!-- Header -->
     <header class="header">
@@ -50,6 +108,7 @@
  
     <hr>
   </table>
+
 
 
  

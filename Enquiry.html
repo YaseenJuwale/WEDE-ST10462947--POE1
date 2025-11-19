@@ -1,15 +1,42 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Enquiry</title>
-     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
-    <link rel="stylesheet" href="../WEDE ST10462947 POE1/Style.css">
+   <head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Enquiry Form | Hanover Bakery</title>
+  <meta name="description" content="Submit your enquiry to Hanover Bakery. Place custom orders, request quotes, or ask questions about our baked goods.">
+
+  <!-- Open Graph -->
+  <meta property="og:title" content="Enquiry Form | Hanover Bakery">
+  <meta property="og:description" content="Submit your enquiry to Hanover Bakery for cakes, breads, or custom orders.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://www.yourwebsite.com/enquiry.html">
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "ContactPage",
+    "name": "Enquiry Form",
+    "url": "https://www.yourwebsite.com/enquiry.html"
+  }
+  </script>
+
+  <link rel="icon" href="../WEDE ST10462947 POE1/favicon.ico" type="image/x-icon">
+  <link rel="stylesheet" href="../WEDE ST10462947 POE1/Style.css">
+</head>
 </head>
 <body>
+  <script src="../WEDE ST10462947 POE1/Script.js"></script>
       <!-- Animated Background -->
   <div id="bg-animation"></div>
+
+  <!-- Live Background -->
+<canvas id="live-bg"></canvas>
+
+<!-- Cursor Container -->
+<div id="icon-container"></div>
+
 
   <!-- Page Content -->
   <div id="page-content">
@@ -78,9 +105,9 @@
 
       <!-- Contact No -->
       <div class="input-box">
-        <i class="fas fa-phone"></i>
-        <input type="tel" id="contact" name="contact" placeholder="Contact No*" required>
-      </div>
+  <i class="fas fa-phone"></i>
+  <input type="tel" id="contact" name="contact" placeholder="Contact No*" maxlength="10" pattern="[0-9]{10}" required>
+</div>
 
       <!-- Category Dropdown -->
       <div class="input-box">
@@ -109,27 +136,39 @@
     </form>
 
     <!-- FAQ Section -->
-    <div class="faq-section">
-      <h2 class="faq-title"><i class="fas fa-question-circle"></i> Frequently Asked Questions</h2>
-      <ul class="faq-list">
-        <li><b>Q1:</b> What are your bakery’s operating hours?<br>
-            <i class="fas fa-reply"></i> We are open Monday to Saturday, 7:00 AM – 6:00 PM.</li>
+<div class="faq-section">
+  <h2 class="faq-title"><i class="fas fa-question-circle"></i> Frequently Asked Questions</h2>
 
-        <li><b>Q2:</b> Do you offer gluten-free and sugar-free products?<br>
-            <i class="fas fa-reply"></i> Yes, we do offer a variety of healthier options.</li>
+  <ul class="faq-list">
 
-        <li><b>Q3:</b> How do I place a custom cake order?<br>
-            <i class="fas fa-reply"></i> Select "Custom Cakes" in the form above and include your design details.</li>
+    <li class="faq-item">
+      <b>Q1:</b> What are your bakery’s operating hours?<br>
+      <span class="answer"><i class="fas fa-reply"></i> We are open Monday to Saturday, 7:00 AM – 6:00 PM.</span>
+    </li>
 
-        <li><b>Q4:</b> Do you provide delivery services?<br>
-            <i class="fas fa-reply"></i> Yes, delivery can be scheduled through the “Delivery Requests” option.</li>
+    <li class="faq-item">
+      <b>Q2:</b> Do you offer gluten-free and sugar-free products?<br>
+      <span class="answer"><i class="fas fa-reply"></i> Yes, we do offer a variety of healthier options.</span>
+    </li>
 
-        <li><b>Q5:</b> Where are you located?<br>
-            <i class="fas fa-reply"></i> Hanover Bakery, Mayfair, Hanover Street.</li>
-      </ul>
-    </div>
+    <li class="faq-item">
+      <b>Q3:</b> How do I place a custom cake order?<br>
+      <span class="answer"><i class="fas fa-reply"></i> Select "Custom Cakes" in the form above and include your design details.</span>
+    </li>
 
-  </div>
+    <li class="faq-item">
+      <b>Q4:</b> Do you provide delivery services?<br>
+      <span class="answer"><i class="fas fa-reply"></i> Yes, delivery can be scheduled through the “Delivery Requests” option.</span>
+    </li>
+
+    <li class="faq-item">
+      <b>Q5:</b> Where are you located?<br>
+      <span class="answer"><i class="fas fa-reply"></i> Hanover Bakery, Mayfair, Hanover Street.</span>
+    </li>
+
+  </ul>
+</div>
+</div>
 
  <!-- Footer -->
 <footer class="footer">
