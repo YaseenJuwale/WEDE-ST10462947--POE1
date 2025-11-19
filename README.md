@@ -16,9 +16,16 @@ A description of the project overall
 - Enquiry- Includes a well-designed inquiry form with buttons, input fields, and a design that is ready for validation for client requests.
 - Contact- Has a contact form, geographical information, and contact details; it is designed using responsive CSS to make it easily accessible.
 
+# Part 3 -JS 
+-Worked on feedback from part 2 
+-JS page craeted
+-created animations 
+-worked on the accordation 
+-SEO was also added to each page 
 
 # References
  - https://www.youtube.com/watch?v=HKdhiOp2uVA
  - https://www.youtube.com/watch?v=i_23KUAEtUM
- 
+ -
+
 
